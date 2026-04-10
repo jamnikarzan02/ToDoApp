@@ -14,7 +14,7 @@ public class TaskManager
     {
         for (int i = 0; i < tasks.Count; i++)
         {
-            Console.WriteLine($"{i + 1}. {tasks[i].Title}");
+            Console.WriteLine($"{i + 1}. [{(tasks[i].IsDone ? "X" : " ")}] {tasks[i].Title}");;
         }
     }
     public void MarkAsDone(int index)
