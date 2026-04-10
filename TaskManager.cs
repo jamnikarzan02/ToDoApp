@@ -17,4 +17,11 @@ public class TaskManager
             Console.WriteLine($"{i + 1}. {tasks[i].Title}");
         }
     }
+    public void MarkAsDone(int index)
+    {
+    if (index >= 0 && index < tasks.Count)
+    {
+        tasks[index].IsDone = true;
+    }
+}
 }
