@@ -25,9 +25,16 @@ class Program
                 case "2":
                     manager.ShowTasks();
                     break;
-
+                    
                 case "3":
+                    Console.Write("Enter task number: ");
+                    int index = int.Parse(Console.ReadLine()) - 1;
+                    manager.MarkAsDone(index);
+                    break;
+
+                case "4":
                     return;
+                    
             }
         }
     }
